@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Menu</a></li>
+  <li><a href="magasin.html">Liste des magasins</a></li>
+  <li><a href="produit.html">Liste des produits</a></li>
+</ul>
+
+	<input type="button" value="Liste des produits" onclick="chargerProduits()"> 
+	<div id="listInfos">
+	<table>
+		<thead>
+		<tr>
+		<th>ID Produit</th>
+		<th>Nom du produit</th>
+		<th>Stock</th>
+		<th>prix</th>
+		</tr>
+		</thead>
+		<tbody id="tableBody">
+		</tbody>
+	</table>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	
+</body>
+</html>
