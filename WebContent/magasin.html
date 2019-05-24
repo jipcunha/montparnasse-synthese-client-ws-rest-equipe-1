@@ -3,33 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <title>Liste des magasins</title>
-
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/bootstrap.css" />
 </head>
 <body>
 
-<ul>
-  <li><a href="index.html">Menu</a></li>
-  <li><a href="magasin.html">Liste des magasins</a></li>
-  <li><a href="produit.html">Liste des produits</a></li>
-</ul>
-
-	<input type="button" value="Liste des magasins" onclick="chargerMagasins()"> 
-	<div id="listInfos">
-	<table>
-		<thead>
-		<tr>
-		<th>ID Magasin</th>
-		<th>Nom du Magasin</th>
-		<th>Code du Magasin</th>
-		<th>Prix du local</th>
-		</tr>
-		</thead>
-		<tbody id="tableBody">
-		</tbody>
-	</table>
+<div class="container">
+	
+	<div class="top">
+		<ul class="nav justify-content-center">
+		  <li class="nav-item">
+		    <a class="nav-link active" href="index.html">Menu</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="magasin.html">Liste des Magasins</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="produit.html">Liste des Produits</a>
+		  </li>
+		</ul>
+	</div>
+	
+	<div class="bas">
+		<input type="button" class="btn btn-success" value="Liste des magasins" onclick="chargerMagasins()"> 
+		
+		<div id="listInfos">
+			<table class="table">
+				<thead class="thead-light">
+				<tr>
+				<th>ID Magasin</th>
+				<th>Nom du Magasin</th>
+				<th>Code du Magasin</th>
+				<th>Prix du local</th>
+				</tr>
+				</thead>
+				<tbody id="tableBody">
+				</tbody>
+			</table>
+		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
-	
+</div>
 </body>
 </html>

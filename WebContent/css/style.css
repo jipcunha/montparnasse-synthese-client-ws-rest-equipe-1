@@ -1,0 +1,21 @@
+li {
+  display: inline;
+}
+
+.nav {
+	background-color: #d3fed7;
+}
+
+.bas{
+	margin: 0;
+  	padding: 15px 0;
+  	text-align: center;
+}
+
+#listInfos{
+	padding: 15px 0;
+}
+
+.container{
+	background-color: #95fd9f;
+}

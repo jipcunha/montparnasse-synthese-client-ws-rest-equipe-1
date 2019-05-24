@@ -3,20 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/bootstrap.css" />
 </head>
 <body>
 
-<ul>
-  <li><a href="index.html">Menu</a></li>
-  <li><a href="magasin.html">Liste des magasins</a></li>
-  <li><a href="produit.html">Liste des produits</a></li>
-</ul>
+<div class="container">
 
-	<input type="button" value="Liste des produits" onclick="chargerProduits()"> 
+	<div class="top">
+	<ul class="nav justify-content-center">
+	  <li class="nav-item">
+	    <a class="nav-link active" href="index.html">Menu</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="magasin.html">Liste des Magasins</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="produit.html">Liste des Produits</a>
+	  </li>
+	</ul>
+	</div>
+
+	<div class="bas">
+	<input type="button" class="btn btn-success" value="Liste des produits" onclick="chargerProduits()"> 
 	<div id="listInfos">
-	<table>
-		<thead>
+	<table class="table">
+		<thead class="thead-light">
 		<tr>
 		<th>ID Produit</th>
 		<th>Nom du produit</th>
@@ -30,6 +42,7 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
-	
+</div>
+</div>
 </body>
 </html>
