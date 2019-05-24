@@ -1,5 +1,5 @@
 function chargerMagasins() {
-	$.getJSON("localhost:8080/synthese-serveur-ejb-ws-equipe-1/produits/getAllMagasins", function(data) {
+	$.getJSON("http://localhost:8080/synthese-serveur-ejb-ws-equipe-1/produits/getAllMagasins", function(data) {
 		$("#tableBody").html("");
 		
 		for(i in data) {
@@ -13,11 +13,11 @@ function chargerMagasins() {
 			
 			$("#tableBody").append($tr);
 		}
-	});
+	})
 }
 
 function chargerProduits() {
-	$.getJSON("localhost:8080/synthese-serveur-ejb-ws-equipe-1/produits/getAllProduits", function(data) {
+	$.getJSON("http://localhost:8080/synthese-serveur-ejb-ws-equipe-1/produits/getAllProduits", function(data) {
 		$("#tableBody").html("");
 		
 		for(i in data) {
